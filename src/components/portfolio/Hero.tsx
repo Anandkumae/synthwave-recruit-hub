@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-[85vh] flex items-center justify-center relative overflow-hidden pt-20">
       {/* Animated background elements */}
       <motion.div 
         className="absolute inset-0 animated-bg opacity-30"
@@ -150,7 +150,7 @@ const Hero = () => {
             >
               {[
                 { icon: Github, href: "https://github.com/Anandkumae", color: "primary" },
-                { icon: Linkedin, href: "https://linkedin.com/in/anand-kumar-91461a19a", color: "tech-secondary" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/anand-kumar-91461a19a", color: "tech-secondary" },
                 { icon: Mail, href: "mailto:anandkumar06091561@gmail.com", color: "accent" }
               ].map(({ icon: Icon, href, color }, index) => (
                 <motion.a

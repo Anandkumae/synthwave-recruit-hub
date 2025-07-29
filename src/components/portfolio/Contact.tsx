@@ -59,7 +59,6 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Anandkumae', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/anand-kumar-91461a19a', label: 'LinkedIn' },
   ];
 
   return (
