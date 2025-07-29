@@ -131,7 +131,11 @@ const Hero = () => {
               </motion.div>
               
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg group">
+                <Button 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg group"
+                  onClick={() => window.open('https://docs.google.com/document/d/1IycXWMQHs_w4ES-sw2Il0ZB9s0A-Vi2aaRGbatka1TM/edit?usp=drive_link', '_blank')}
+                >
                   <Download className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   Download Resume
                 </Button>
@@ -145,9 +149,9 @@ const Hero = () => {
               transition={{ delay: 1.5, duration: 0.8 }}
             >
               {[
-                { icon: Github, href: "#", color: "primary" },
-                { icon: Linkedin, href: "#", color: "tech-secondary" },
-                { icon: Mail, href: "#", color: "accent" }
+                { icon: Github, href: "https://github.com/Anandkumae", color: "primary" },
+                { icon: Linkedin, href: "https://linkedin.com/in/anand-kumar-91461a19a", color: "tech-secondary" },
+                { icon: Mail, href: "mailto:anandkumar06091561@gmail.com", color: "accent" }
               ].map(({ icon: Icon, href, color }, index) => (
                 <motion.a
                   key={href}

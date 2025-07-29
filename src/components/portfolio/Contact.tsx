@@ -44,30 +44,22 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'hello@portfolio.dev',
-      href: 'mailto:hello@portfolio.dev',
+      value: 'anandkumar06091561@gmail.com',
+      href: 'mailto:anandkumar06091561@gmail.com',
       color: 'tech-primary'
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
-      color: 'tech-secondary'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Pune, India',
       href: '#',
       color: 'tech-tertiary'
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/Anandkumae', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/anand-kumar-91461a19a', label: 'LinkedIn' },
   ];
 
   return (

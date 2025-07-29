@@ -14,13 +14,13 @@ const About = () => {
 
   const journey = [
     {
-      year: '2022',
+      year: '2023',
       title: 'Started Computer Engineering',
-      description: 'Began my journey in Computer Engineering, diving deep into programming fundamentals and data structures.',
+      description: 'Began my journey in Computer Engineering at Sinhgad College of Engineering, diving deep into programming fundamentals and data structures.',
       tech: ['C', 'Python', 'Mathematics']
     },
     {
-      year: '2023',
+      year: '2024',
       title: 'Discovered Machine Learning',
       description: 'Fell in love with AI/ML and started building projects with TensorFlow and scikit-learn.',
       tech: ['TensorFlow', 'Pandas', 'NumPy', 'Jupyter']
@@ -71,11 +71,11 @@ const About = () => {
                     A
                   </motion.div>
                   <div>
-                    <h3 className="text-2xl font-bold gradient-text">Anand</h3>
+                    <h3 className="text-2xl font-bold gradient-text">Anand Kumar</h3>
                     <p className="text-muted-foreground">Computer Engineering Student</p>
                     <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4" />
-                      <span>Mumbai, India</span>
+                      <span>Pune, India</span>
                     </div>
                   </div>
                 </div>
@@ -90,11 +90,11 @@ const About = () => {
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <GraduationCap className="w-4 h-4 text-primary" />
-                      <span className="text-sm">Computer Engineering • Expected 2025</span>
+                      <span className="text-sm">Sinhgad College of Engineering, Pune • Expected 2026</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-primary" />
-                      <span className="text-sm">3+ years of coding experience</span>
+                      <span className="text-sm">2+ years of coding experience</span>
                     </div>
                   </div>
 
@@ -110,7 +110,10 @@ const About = () => {
                     ))}
                   </div>
 
-                  <Button className="w-full mt-6 bg-primary hover:bg-primary-glow">
+                  <Button 
+                    className="w-full mt-6 bg-primary hover:bg-primary-glow"
+                    onClick={() => window.open('https://docs.google.com/document/d/1IycXWMQHs_w4ES-sw2Il0ZB9s0A-Vi2aaRGbatka1TM/edit?usp=drive_link', '_blank')}
+                  >
                     <Download className="mr-2 w-4 h-4" />
                     Download Full Resume
                   </Button>
