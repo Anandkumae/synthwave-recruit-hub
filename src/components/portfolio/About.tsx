@@ -112,7 +112,7 @@ const About = () => {
 
                   <Button 
                     className="w-full mt-6 bg-primary hover:bg-primary-glow"
-                    onClick={() => window.open('https://docs.google.com/document/d/1IycXWMQHs_w4ES-sw2Il0ZB9s0A-Vi2aaRGbatka1TM/edit?usp=drive_link', '_blank')}
+                    onClick={() => window.open('https://drive.google.com/file/d/1zjrWIh-80C6PYFhYWvhysBSaLKKz4MhR/view?usp=drive_link', '_blank')}
                   >
                     <Download className="mr-2 w-4 h-4" />
                     Download Full Resume
