@@ -55,12 +55,22 @@ const ProjectCard = ({
         {/* Action buttons overlay */}
         <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {liveUrl && (
-            <Button size="icon" variant="secondary" className="w-8 h-8">
+            <Button 
+              size="icon" 
+              variant="secondary" 
+              className="w-8 h-8"
+              onClick={() => window.open(liveUrl, '_blank')}
+            >
               <ExternalLink className="w-4 h-4" />
             </Button>
           )}
           {githubUrl && (
-            <Button size="icon" variant="secondary" className="w-8 h-8">
+            <Button 
+              size="icon" 
+              variant="secondary" 
+              className="w-8 h-8"
+              onClick={() => window.open(githubUrl, '_blank')}
+            >
               <Github className="w-4 h-4" />
             </Button>
           )}
@@ -91,13 +101,22 @@ const ProjectCard = ({
 
         <div className="flex gap-3 pt-2">
           {liveUrl && (
-            <Button size="sm" className="flex-1 bg-primary hover:bg-primary-glow">
+            <Button 
+              size="sm" 
+              className="flex-1 bg-primary hover:bg-primary-glow"
+              onClick={() => window.open(liveUrl, '_blank')}
+            >
               <Eye className="w-4 h-4 mr-2" />
               Live Demo
             </Button>
           )}
           {githubUrl && (
-            <Button size="sm" variant="outline" className="flex-1 border-primary text-primary hover:bg-primary/10">
+            <Button 
+              size="sm" 
+              variant="outline" 
+              className="flex-1 border-primary text-primary hover:bg-primary/10"
+              onClick={() => window.open(githubUrl, '_blank')}
+            >
               <Github className="w-4 h-4 mr-2" />
               Code
             </Button>
