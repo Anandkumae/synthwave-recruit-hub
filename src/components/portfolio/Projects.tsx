@@ -125,7 +125,7 @@ const Projects = () => {
           <Button 
             variant="outline" 
             className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg"
-            githubUrl="https://github.com/Anandkumae",
+          
           >
             View All Projects on GitHub
           </Button>
