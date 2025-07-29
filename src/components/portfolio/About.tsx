@@ -90,7 +90,7 @@ const About = () => {
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <GraduationCap className="w-4 h-4 text-primary" />
-                      <span className="text-sm">Sinhgad College of Engineering, Pune • Expected 2026</span>
+                      <span className="text-sm">Sinhgad College of Engineering, Pune • Expected 2027</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-primary" />
@@ -112,7 +112,7 @@ const About = () => {
 
                   <Button 
                     className="w-full mt-6 bg-primary hover:bg-primary-glow"
-                    onClick={() => window.open('https://drive.google.com/file/d/1zjrWIh-80C6PYFhYWvhysBSaLKKz4MhR/view?usp=drive_link', '_blank')}
+                    onClick={() => window.open('https://drive.google.com/file/d/1eemgQYYemWrLpfxBBAU9FjlFflHeAxy1/view?usp=drive_link', '_blank')}
                   >
                     <Download className="mr-2 w-4 h-4" />
                     Download Full Resume
