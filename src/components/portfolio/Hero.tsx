@@ -134,7 +134,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg group"
-                  onClick={() => window.open('https://drive.google.com/file/d/1zjrWIh-80C6PYFhYWvhysBSaLKKz4MhR/view?usp=drive_link', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1eemgQYYemWrLpfxBBAU9FjlFflHeAxy1/view?usp=drive_link', '_blank')}
                 >
                   <Download className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   Download Resume
