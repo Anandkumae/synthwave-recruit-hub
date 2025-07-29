@@ -21,7 +21,6 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&h=300&fit=crop',
       technologies: ['JWT', 'Node.js', 'JavaScript', 'RESTful API', 'Docker'],
       category: 'fullstack' as const,
-      liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/Anandkumae/event-booking_back',
       featured: true,
     },
@@ -31,6 +30,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500&h=300&fit=crop',
       technologies: ['Python', 'TensorFlow', 'FastAPI', 'OpenCV', 'Docker'],
       category: 'ml' as const,
+      liveUrl:'https://adaptivetraffic1-app.streamlit.app/',
       githubUrl: 'https://github.com/Anandkumae/Adaptivetraffic1-app',
     },
     {
@@ -39,6 +39,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
       technologies: ['Python', 'Cloud', 'Pytorch', 'JWT', 'Jest'],
       category: 'backend' as const,
+      liveUrl:'https://mlapi-loan-9.onrender.com',
       githubUrl: 'https://github.com/Anandkumae/MLAPI_Loan',
     },
     {
@@ -56,6 +57,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=300&fit=crop',
       technologies: ['Python', 'Scikit-learn', 'Pandas', 'streamlit'],
       category: 'ml' as const,
+      liveUrl:'https://medical-chatbot-iilc.onrender.com',
       githubUrl: 'https://github.com/Anandkumae/medical_chatbot',
     },
     {
@@ -64,7 +66,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop',
       technologies: ['Sreamlit', 'FastAPI', 'Mistarl', 'Render'],
       category: 'fullstack' as const,
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://legalbuddy-7x5xxdptt64jcwgm4ccatm.streamlit.app',
       githubUrl: 'https://github.com/Anandkumae/legal_buddy',
     },
   ];
