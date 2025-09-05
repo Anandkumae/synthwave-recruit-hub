@@ -7,70 +7,26 @@ import { ExternalLink, Award, Calendar, Star } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford University (Coursera)',
-      date: 'Sep 2024',
+      title: 'Deep Learning Certificate',
+      issuer: 'IIT Kharagpur',
+      date: 'Completed',
       level: 'Advanced',
-      credentialId: 'ABC123XYZ',
-      skills: ['Machine Learning', 'Deep Learning', 'Neural Networks', 'Python'],
-      description: 'Comprehensive specialization covering supervised learning, unsupervised learning, and neural networks.',
-      logo: '🎓',
-      verifyUrl: '#'
+      credentialId: 'IIT-KGP-DL-2024',
+      skills: ['Deep Learning', 'Neural Networks', 'TensorFlow', 'PyTorch', 'Computer Vision'],
+      description: 'Comprehensive deep learning program covering advanced neural network architectures, computer vision, and practical applications.',
+      logo: '🧠',
+      verifyUrl: 'https://drive.google.com/file/d/1Aqg_3FEhRleSYi_RMEjXrlnZCuKgAntg/view'
     },
     {
-      title: 'AWS Certified Developer - Associate',
-      issuer: 'Amazon Web Services',
-      date: 'Jul 2024',
-      level: 'Professional',
-      credentialId: 'AWS-DEV-2024',
-      skills: ['AWS', 'Cloud Computing', 'DevOps', 'Serverless'],
-      description: 'Validates expertise in developing and maintaining applications on AWS platform.',
-      logo: '☁️',
-      verifyUrl: '#'
-    },
-    {
-      title: 'Google Data Analytics Professional Certificate',
-      issuer: 'Google (Coursera)',
-      date: 'Mar 2024',
-      level: 'Professional',
-      credentialId: 'GOOGLE-DA-2024',
-      skills: ['Data Analysis', 'SQL', 'Tableau', 'R Programming'],
-      description: 'Comprehensive program covering data analysis process using industry-standard tools.',
-      logo: '📊',
-      verifyUrl: '#'
-    },
-    {
-      title: 'Docker Certified Associate',
-      issuer: 'Docker Inc.',
-      date: 'Jan 2024',
-      level: 'Associate',
-      credentialId: 'DOCKER-2024',
-      skills: ['Docker', 'Containerization', 'DevOps', 'Kubernetes'],
-      description: 'Demonstrates skills in Docker containerization and orchestration technologies.',
-      logo: '🐳',
-      verifyUrl: '#'
-    },
-    {
-      title: 'React - The Complete Guide',
-      issuer: 'Udemy',
-      date: 'Dec 2023',
+      title: 'Machine Learning Certificate',
+      issuer: 'IIT Kharagpur',
+      date: 'Completed',
       level: 'Advanced',
-      credentialId: 'REACT-COMP-2023',
-      skills: ['React', 'JavaScript', 'Frontend Development', 'Redux'],
-      description: 'In-depth course covering React ecosystem including hooks, context, and state management.',
-      logo: '⚛️',
-      verifyUrl: '#'
-    },
-    {
-      title: 'Python for Data Science and AI',
-      issuer: 'IBM (Coursera)',
-      date: 'Oct 2023',
-      level: 'Intermediate',
-      credentialId: 'IBM-PY-2023',
-      skills: ['Python', 'Pandas', 'NumPy', 'Data Science'],
-      description: 'Foundational course for using Python in data science and artificial intelligence applications.',
-      logo: '🐍',
-      verifyUrl: '#'
+      credentialId: 'IIT-KGP-ML-2024',
+      skills: ['Machine Learning', 'Data Science', 'Statistical Analysis', 'Python', 'Algorithms'],
+      description: 'Advanced machine learning program covering supervised learning, unsupervised learning, and statistical methods.',
+      logo: '🤖',
+      verifyUrl: 'https://drive.google.com/file/d/1iCxZrKyblnFySiQw-GSHa5t7xdZXSbpc/view'
     }
   ];
 
@@ -232,13 +188,14 @@ const Certifications = () => {
 
                   {/* Verify Button */}
                   <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                    <Button 
+                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="w-full border-primary/20 text-primary hover:bg-primary/10 group/btn"
+                      onClick={() => window.open(cert.verifyUrl, '_blank')}
                     >
                       <ExternalLink className="mr-2 w-3 h-3 group-hover/btn:scale-110 transition-transform" />
-                      Verify Certificate
+                      View Certificate
                     </Button>
                   </motion.div>
                 </CardContent>
@@ -256,10 +213,10 @@ const Certifications = () => {
           viewport={{ once: true }}
         >
           {[
-            { label: 'Certifications', value: '8+', icon: '🎯' },
-            { label: 'Learning Hours', value: '500+', icon: '⏱️' },
-            { label: 'Skills Mastered', value: '25+', icon: '💪' },
-            { label: 'Platforms', value: '6', icon: '🌐' }
+            { label: 'Certifications', value: '2', icon: '🎯' },
+            { label: 'Learning Hours', value: '200+', icon: '⏱️' },
+            { label: 'Skills Mastered', value: '15+', icon: '💪' },
+            { label: 'IIT Programs', value: '2', icon: '🏛️' }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

@@ -44,19 +44,19 @@ const Experience = () => {
     {
       position: 'Promotional Intern & Developer',
       company: 'GoSeeko',
-      duration: 'Internship Period',
+      duration: '2 Months',
       location: 'India',
       type: 'Internship',
       status: 'completed',
-      description: 'Worked in dual capacity as a promotional intern and developer, gaining experience in both marketing strategies and software development. Contributed to product promotion while developing technical solutions.',
+      description: 'Completed a comprehensive 2-month dual-role internship as promotional intern and developer. Gained valuable experience in digital marketing strategies while contributing to software development projects.',
       achievements: [
-        'Successfully combined promotional activities with development work',
-        'Contributed to marketing campaigns and user engagement strategies',
-        'Developed web components and user interface elements',
-        'Assisted in product development and feature implementation',
-        'Gained experience in customer outreach and product positioning'
+        'Successfully executed promotional campaigns resulting in increased user engagement',
+        'Developed responsive web components and enhanced user interface designs',
+        'Collaborated with marketing team to implement growth strategies',
+        'Contributed to product development and feature enhancement initiatives',
+        'Gained practical experience in customer acquisition and retention strategies'
       ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Marketing Tools', 'Web Development'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Digital Marketing', 'Web Development'],
       companyLogo: '🎯'
     }
   ];
