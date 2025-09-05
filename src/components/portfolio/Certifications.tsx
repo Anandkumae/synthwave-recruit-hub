@@ -7,24 +7,24 @@ import { ExternalLink, Award, Calendar, Star } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Deep Learning Certificate',
+      title: 'Deep Learning Certification',
       issuer: 'IIT Kharagpur',
-      date: 'Completed',
+      date: '2024',
       level: 'Advanced',
       credentialId: 'IIT-KGP-DL-2024',
-      skills: ['Deep Learning', 'Neural Networks', 'TensorFlow', 'PyTorch', 'Computer Vision'],
-      description: 'Comprehensive deep learning program covering advanced neural network architectures, computer vision, and practical applications.',
+      skills: ['Neural Networks', 'Computer Vision', 'NLP', 'TensorFlow', 'PyTorch'],
+      description: 'Mastery in deep learning concepts, including CNN, RNN, GANs, and their applications in computer vision and natural language processing.',
       logo: '🧠',
       verifyUrl: 'https://drive.google.com/file/d/1Aqg_3FEhRleSYi_RMEjXrlnZCuKgAntg/view'
     },
     {
-      title: 'Machine Learning Certificate',
+      title: 'Machine Learning Certification',
       issuer: 'IIT Kharagpur',
-      date: 'Completed',
+      date: '2024',
       level: 'Advanced',
       credentialId: 'IIT-KGP-ML-2024',
-      skills: ['Machine Learning', 'Data Science', 'Statistical Analysis', 'Python', 'Algorithms'],
-      description: 'Advanced machine learning program covering supervised learning, unsupervised learning, and statistical methods.',
+      skills: ['Supervised Learning', 'Unsupervised Learning', 'Python', 'Scikit-learn', 'Model Evaluation'],
+      description: 'Comprehensive training in machine learning algorithms, model selection, and evaluation techniques for real-world data science applications.',
       logo: '🤖',
       verifyUrl: 'https://drive.google.com/file/d/1iCxZrKyblnFySiQw-GSHa5t7xdZXSbpc/view'
     }

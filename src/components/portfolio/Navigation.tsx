@@ -20,7 +20,6 @@ const Navigation = () => {
     { name: 'About', href: '#about', icon: User },
     { name: 'Projects', href: '#projects', icon: Code },
     { name: 'Skills', href: '#skills', icon: Briefcase },
-    { name: 'Blog', href: '#blog', icon: BookOpen },
     { name: 'Contact', href: '#contact', icon: MessageSquare },
   ];
 

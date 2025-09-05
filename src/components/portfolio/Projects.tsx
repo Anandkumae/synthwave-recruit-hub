@@ -16,58 +16,64 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Event-Booking Api',
-      description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and real-time inventory management.',
+      title: 'Event Booking API',
+      description: 'A comprehensive event management system with user authentication, real-time booking, and payment processing. Built with modern web technologies for scalability and performance.',
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&h=300&fit=crop',
-      technologies: ['JWT', 'Node.js', 'JavaScript', 'RESTful API', 'Docker'],
+      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT Auth', 'Docker'],
       category: 'fullstack' as const,
+      liveUrl: 'https://event-booking-demo.com',
       githubUrl: 'https://github.com/Anandkumae/event-booking_back',
-      featured: true,
+      featured: true
     },
     {
       title: 'Adaptive Traffic System',
-      description: 'Machine learning model for image classification using TensorFlow and Python. Achieved 95% accuracy on custom datasets and classify the vehicles based on training',
+      description: 'AI-powered traffic management system that analyzes real-time video feeds to optimize traffic flow and reduce congestion using computer vision and deep learning.',
       image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=500&h=300&fit=crop',
-      technologies: ['Python', 'TensorFlow', 'FastAPI', 'OpenCV', 'Docker'],
+      technologies: ['Python', 'TensorFlow', 'OpenCV', 'FastAPI', 'Streamlit'],
       category: 'ml' as const,
-      liveUrl:'https://adaptivetraffic1-app.streamlit.app/',
+      liveUrl: 'https://adaptivetraffic1-app.streamlit.app/',
       githubUrl: 'https://github.com/Anandkumae/Adaptivetraffic1-app',
+      featured: true
     },
     {
-      title: 'MLAPI System For Loan',
-      description: 'API system built using fastapi as backened and trained on s reallife datasets for tarining and can be visualized for predictions',
+      title: 'Loan Prediction API',
+      description: 'A robust machine learning API for loan approval predictions, featuring real-time scoring and comprehensive visualization dashboard for insights.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      technologies: ['Python', 'Cloud', 'Pytorch', 'JWT', 'Jest'],
+      technologies: ['Python', 'FastAPI', 'Scikit-learn', 'JWT', 'Docker'],
       category: 'backend' as const,
-      liveUrl:'https://mlapi-loan-9.onrender.com',
+      liveUrl: 'https://mlapi-loan-9.onrender.com',
       githubUrl: 'https://github.com/Anandkumae/MLAPI_Loan',
+      featured: true
     },
     {
-      title: 'Smart Ingredient Watchdog',
-      description: 'Interactive dashboard built with streamlit and OCR for visualizing complex datasets. Features real-time updates and responses.',
+      title: 'Smart Ingredient Scanner',
+      description: 'Mobile application that analyzes food product ingredients using OCR and provides health insights and allergy warnings in real-time.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      technologies: ['Python', 'Tesseract OCR', 'spaCy,scikit-learn', 'streamlit'],
+      technologies: ['Python', 'Tesseract OCR', 'spaCy', 'Streamlit', 'FastAPI'],
       category: 'frontend' as const,
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://smart-ingredient-scanner.vercel.app',
       githubUrl: 'https://github.com/Anandkumae/smartingredientswatchdog1',
+      featured: true
     },
     {
-      title: 'Medical Chatbot',
-      description: 'Machine learning pipeline for knowing the kind of problems are suffering with and give proper solutions.',
+      title: 'Healthcare Assistant',
+      description: 'AI-powered medical chatbot that provides preliminary diagnosis and connects users with healthcare professionals based on symptoms analysis.',
       image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500&h=300&fit=crop',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'streamlit'],
+      technologies: ['Python', 'NLP', 'Scikit-learn', 'FastAPI', 'Streamlit'],
       category: 'ml' as const,
-      liveUrl:'https://medical-chatbot-iilc.onrender.com',
+      liveUrl: 'https://medical-chatbot-iilc.onrender.com',
       githubUrl: 'https://github.com/Anandkumae/medical_chatbot',
+      featured: true
     },
     {
-      title: 'Legal buddy chat-App',
-      description: 'Modern chat application built exclusively for the practicing lawyers for the historical decisions made earlier',
+      title: 'Legal Assistant AI',
+      description: 'Comprehensive legal research tool that analyzes case law and provides relevant precedents using natural language processing.',
       image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop',
-      technologies: ['Sreamlit', 'FastAPI', 'Mistarl', 'Render'],
+      technologies: ['Python', 'Mistral AI', 'FastAPI', 'Streamlit', 'Docker'],
       category: 'fullstack' as const,
       liveUrl: 'https://legalbuddy-7x5xxdptt64jcwgm4ccatm.streamlit.app',
       githubUrl: 'https://github.com/Anandkumae/legal_buddy',
+      featured: true
     },
   ];
 
