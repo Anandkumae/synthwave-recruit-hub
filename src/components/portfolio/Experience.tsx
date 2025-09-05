@@ -7,61 +7,74 @@ import { ExternalLink, Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      position: 'Machine Learning Intern',
-      company: 'Tech Innovations Pvt Ltd',
-      duration: 'Jun 2024 - Aug 2024',
-      location: 'Mumbai, India',
-      type: 'Internship',
-      description: 'Developed and deployed machine learning models for predictive analytics, improving accuracy by 25%. Worked with large datasets and implemented automated data pipelines.',
+      position: 'Developer',
+      company: 'ShinnovationCo',
+      duration: 'Present',
+      location: 'India',
+      type: 'Current Position',
+      status: 'current',
+      description: 'Currently working as a developer, contributing to innovative software solutions and gaining hands-on experience in full-stack development. Collaborating with experienced developers to build scalable applications.',
       achievements: [
-        'Built predictive models using TensorFlow and scikit-learn',
-        'Deployed models to production using Docker and AWS',
-        'Improved model accuracy by 25% through feature engineering',
-        'Automated data preprocessing pipelines'
+        'Contributing to live production applications',
+        'Learning advanced development practices and methodologies',
+        'Collaborating with senior developers on complex projects',
+        'Implementing modern development workflows and best practices'
       ],
-      technologies: ['Python', 'TensorFlow', 'AWS', 'Docker', 'PostgreSQL'],
-      companyLogo: '🤖'
+      technologies: ['React', 'JavaScript', 'Node.js', 'Git', 'Agile Development'],
+      companyLogo: '💡'
     },
     {
-      position: 'Backend Developer Intern',
-      company: 'StartupXYZ',
-      duration: 'Dec 2023 - Mar 2024',
-      location: 'Remote',
+      position: 'AI & ML Intern',
+      company: 'Edunet Foundation',
+      duration: '2 Months',
+      location: 'India',
       type: 'Internship',
-      description: 'Designed and implemented RESTful APIs for a fintech application. Optimized database queries resulting in 40% performance improvement.',
+      status: 'completed',
+      description: 'Completed a comprehensive 2-month internship focusing on Artificial Intelligence and Machine Learning. Gained practical experience in data science, model development, and AI implementation.',
       achievements: [
-        'Built scalable REST APIs serving 10k+ requests daily',
-        'Optimized database queries reducing response time by 40%',
-        'Implemented JWT authentication and authorization',
-        'Wrote comprehensive unit and integration tests'
+        'Developed machine learning models using Python and popular ML libraries',
+        'Worked on real-world datasets for predictive analytics',
+        'Implemented AI algorithms for pattern recognition and data analysis',
+        'Completed projects on supervised and unsupervised learning techniques',
+        'Gained expertise in data preprocessing and feature engineering'
       ],
-      technologies: ['Node.js', 'Express', 'MongoDB', 'Redis', 'Jest'],
-      companyLogo: '🚀'
+      technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'Scikit-learn', 'Jupyter Notebook'],
+      companyLogo: '🧠'
     },
     {
-      position: 'Full Stack Developer',
-      company: 'Freelance Projects',
-      duration: 'Jan 2023 - Present',
-      location: 'Remote',
-      type: 'Freelance',
-      description: 'Developed complete web applications for small businesses and startups. Managed projects from conception to deployment.',
+      position: 'Promotional Intern & Developer',
+      company: 'GoSeeko',
+      duration: 'Internship Period',
+      location: 'India',
+      type: 'Internship',
+      status: 'completed',
+      description: 'Worked in dual capacity as a promotional intern and developer, gaining experience in both marketing strategies and software development. Contributed to product promotion while developing technical solutions.',
       achievements: [
-        'Delivered 8+ complete web applications',
-        'Managed end-to-end project lifecycle',
-        'Achieved 95% client satisfaction rate',
-        'Implemented automated deployment pipelines'
+        'Successfully combined promotional activities with development work',
+        'Contributed to marketing campaigns and user engagement strategies',
+        'Developed web components and user interface elements',
+        'Assisted in product development and feature implementation',
+        'Gained experience in customer outreach and product positioning'
       ],
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Docker'],
-      companyLogo: '💼'
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Marketing Tools', 'Web Development'],
+      companyLogo: '🎯'
     }
   ];
 
   const getTypeColor = (type: string) => {
     switch (type.toLowerCase()) {
-      case 'internship': return 'bg-tech-primary/10 text-tech-primary border-tech-primary/20';
-      case 'freelance': return 'bg-tech-secondary/10 text-tech-secondary border-tech-secondary/20';
+      case 'internship': return 'bg-blue-500/10 text-blue-600 border-blue-500/20 dark:text-blue-400';
+      case 'current position': return 'bg-green-500/10 text-green-600 border-green-500/20 dark:text-green-400 animate-pulse';
+      case 'freelance': return 'bg-purple-500/10 text-purple-600 border-purple-500/20 dark:text-purple-400';
       default: return 'bg-accent/10 text-accent border-accent/20';
     }
+  };
+
+  const getStatusIcon = (status: string) => {
+    if (status === 'current') {
+      return <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse inline-block mr-2"></div>;
+    }
+    return <div className="w-2 h-2 bg-gray-400 rounded-full inline-block mr-2"></div>;
   };
 
   return (
@@ -116,7 +129,8 @@ const Experience = () => {
                             {experience.location}
                           </div>
                         </div>
-                        <Badge className={`mt-3 ${getTypeColor(experience.type)}`}>
+                        <Badge className={`mt-3 ${getTypeColor(experience.type)} font-medium`}>
+                          {getStatusIcon(experience.status)}
                           {experience.type}
                         </Badge>
                       </div>
@@ -198,7 +212,10 @@ const Experience = () => {
               <p className="text-muted-foreground mb-6">
                 I'm always open to discussing new opportunities and exciting projects.
               </p>
-              <Button className="bg-primary hover:bg-primary-glow group">
+              <Button 
+                className="bg-primary hover:bg-primary-glow group"
+                onClick={() => window.open('https://www.linkedin.com/in/anandkumae/', '_blank')}
+              >
                 <ExternalLink className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
                 View My LinkedIn
               </Button>
