@@ -80,7 +80,7 @@ const Hero = () => {
                   strings={[
                     "Computer Engineering Student",
                     "Machine Learning Enthusiast", 
-                    "Backend Developer",
+                    "Frontend Developer",
                     "Problem Solver"
                   ]}
                   typeSpeed={50}
@@ -97,7 +97,7 @@ const Hero = () => {
             >
               Building intelligent and scalable tech with{' '}
               <span className="text-tech-primary font-semibold">ML</span>,{' '}
-              <span className="text-tech-secondary font-semibold">Backend Dev</span>, and{' '}
+              <span className="text-tech-secondary font-semibold">Frontend Dev</span>, and{' '}
               <span className="text-tech-tertiary font-semibold">Automation</span>
             </motion.div>
           </motion.div>
